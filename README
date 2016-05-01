@@ -1,7 +1,7 @@
 go-padding-oracle
 -----------------
 Check if the secure pipeline configuration variables on Go (https://go.cd)
-is vulnerable to the Padding Oracle Attack (https://en.wikipedia.org/wiki/Padding_oracle_attack).
+are vulnerable to the Padding Oracle Attack (https://en.wikipedia.org/wiki/Padding_oracle_attack).
 
 bot.py requires paddingoracle and requests to be installed; so before you run the script -
 sudo pip install -U paddingoracle requests
