@@ -1,0 +1,17 @@
+go-padding-oracle
+-----------------
+Check if the secure pipeline configuration variables on Go (https://go.cd)
+is vulnerable to the Padding Oracle Attack (https://en.wikipedia.org/wiki/Padding_oracle_attack).
+
+bot.py requires paddingoracle and requests to be installed; so before you run the script -
+sudo pip install -U paddingoracle requests
+
+For testing, an instance of Go (development server) was run on localhost.
+The pipeline is foo and the stage 'mindsweeper-stg'.
+
+API Endpoint: http://192.168.0.146:8153/go/api/admin/pipelines/foo
+
+References:
+- https://blog.skullsecurity.org/2013/padding-oracle-attacks-in-depth
+
+Check out https://github.com/mwielgoszewski/python-paddingoracle for more details on paddingoracle, 
