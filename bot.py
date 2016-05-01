@@ -87,5 +87,6 @@ def main():
 
     print('Decrypted somecookie: %s => %r' % (sys.argv[1], cookie))
 
+
 if __name__ == '__main__':
     main()
