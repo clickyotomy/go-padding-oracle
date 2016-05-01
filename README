@@ -8,6 +8,13 @@ sudo pip install -U paddingoracle requests
 
 For testing, an instance of Go (development server) was run on localhost.
 The pipeline is foo and the stage 'mindsweeper-stg'.
+The name of the environment variable can be anything. One variable should  be sufficient. Create one under 'mindsweeper-stg'.
+
+To get the encrypted value that is stored, run -
+
+curl -X "GET" -H 'Accept: application/vnd.go.cd.v1+json' \
+'http://192.168.0.146:8153/go/api/admin/pipelines/foo' \
+| grep "encrypted_value" | sed  's/.*encrypted_value.*://g' | xargs
 
 API Endpoint: http://localhost:8153/go/api/admin/pipelines/foo.
 
