@@ -9,7 +9,7 @@ sudo pip install -U paddingoracle requests
 For testing, an instance of Go (development server) was run on localhost.
 The pipeline is foo and the stage 'mindsweeper-stg'.
 
-API Endpoint: http://localhost:8153/go/api/admin/pipelines/foo
+API Endpoint: http://localhost:8153/go/api/admin/pipelines/foo.
 
 References:
 Padding Oracle Attacks, in depth: https://blog.skullsecurity.org/2013/padding-oracle-attacks-in-depth
